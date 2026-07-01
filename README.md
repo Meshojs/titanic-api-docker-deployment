@@ -1,4 +1,4 @@
-# Titanic Survival Predictor API ( :> )
+# Titanic Survival Predictor API :> 🐳
 
 https://masharyy-titanic-api.hf.space/
 
@@ -23,7 +23,7 @@ This project takes a trained PyTorch model and serves it through a production-st
 
 ## Why FastAPI + Docker
 
-FastAPI made it straightforward to define typed request/response schemas and get automatic API documentation for free. Wrapping the app in Docker meant the model, preprocessing pipeline, and API server all ship as one image — which is what made a CI/CD pipeline possible, since the same image built in CI is exactly what gets deployed.
+FastAPI made it straightforward to define typed request/response schemas and get automatic API documentation for free. Wrapping the app in Docker meant the model, preprocessing pipeline, and API server all ship as one image ; which is what made a CI/CD pipeline possible, since the same image built in CI is exactly what gets deployed.
 
 ## Running Locally
 
