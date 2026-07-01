@@ -1,0 +1,6 @@
+import subprocess
+import os
+
+if __name__ == "__main__":
+    subprocess.run(["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "7860"])
+    # this is because we are uplaoding it to huggingFace : >

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titanic Survival Predictor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        :root {
+            --bg: #050a14;
+            --fg: #e8ecf4;
+            --muted: #6b7a94;
+            --accent: #4fd1c5;
+            --border: rgba(107, 122, 148, 0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg);
+            min-height: 100vh;
+            color: var(--fg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            text-align: center;
+            padding: 2rem;
+            max-width: 520px;
+        }
+
+        .whale {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            line-height: 1;
+        }
+
+        h1 {
+            font-size: 1.65rem;
+            font-weight: 700;
+            letter-spacing: -0.3px;
+            color: var(--fg);
+            margin-bottom: 0.75rem;
+        }
+
+        .subtitle {
+            font-size: 0.92rem;
+            color: var(--muted);
+            line-height: 1.6;
+            margin-bottom: 2.5rem;
+            font-weight: 400;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 13px 30px;
+            border-radius: 10px;
+            font-size: 0.92rem;
+            font-weight: 600;
+            font-family: 'DM Sans', sans-serif;
+            text-decoration: none;
+            color: var(--bg);
+            background: var(--accent);
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            opacity: 0.88;
+        }
+
+        .btn:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 3px;
+        }
+
+        .footer {
+            margin-top: 3rem;
+            font-size: 0.78rem;
+            color: var(--muted);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .footer-sep {
+            width: 3px;
+            height: 3px;
+            border-radius: 50%;
+            background: var(--border);
+        }
+
+        .footer a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .footer a:hover {
+            opacity: 0.75;
+        }
+
+        @media (max-width: 480px) {
+            h1 { font-size: 1.35rem; }
+            .btn { width: 100%; justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="whale">🐋</div>
+        <h1>Titanic Survival Predictor</h1>
+        <p class="subtitle">
+            A PyTorch model served via FastAPI that predicts passenger survival based on class, age, sex, and fare.
+        </p>
+        <a href="/docs" class="btn">
+            <i class="fa-solid fa-book" aria-hidden="true"></i>
+            API Docs
+        </a>
+        <footer class="footer">
+            <span>PyTorch</span>
+            <span class="footer-sep" aria-hidden="true"></span>
+            <span>FastAPI</span>
+            <span class="footer-sep" aria-hidden="true"></span>
+            <a href="https://github.com/Meshojs/titanic-api-docker-deployment" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub
+            </a>
+        </footer>
+    </div>
+</body>
+</html>
